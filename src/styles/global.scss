@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: $color-bg;
+  color: $color-dark;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  font-weight: 400;
+  color: $color-dark;
+  text-decoration: inherit;
+}
+a:hover {
+  color: $color-light-grey;
+}
