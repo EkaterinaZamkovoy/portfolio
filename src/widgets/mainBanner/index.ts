@@ -1,2 +1,1 @@
-export { Header } from './header';
 export { MainBanner } from './mainBanner';

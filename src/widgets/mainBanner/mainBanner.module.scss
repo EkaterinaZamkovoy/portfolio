@@ -1,0 +1,97 @@
+.container {
+  position: relative;
+  display: flex;
+  margin-top: 55px;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  max-width: 608px;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  color: $color-accent;
+}
+
+.myName {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.aboutMe {
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.buttonsBlock {
+  display: flex;
+  gap: 12px;
+}
+
+.imgBlock {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+
+  img {
+    position: relative;
+    z-index: 1;
+    display: block;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -0.7%;
+    left: 20%;
+    border: 5px solid $color-accent;
+    width: 100%;
+    height: 105%;
+    z-index: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -6%;
+    left: -1%;
+    border: 5px solid $color-accent;
+    width: 115%;
+    height: 105%;
+    opacity: 0.4;
+    z-index: 0;
+  }
+}
+
+.extraLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 120%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -39%;
+    left: -15%;
+    background: $color-accent;
+    border-radius: 60% 140% 70% 130% / 40% 60% 30% 70%;
+    transform: rotate(25deg);
+    width: 230%;
+    height: 135%;
+    opacity: 0.2;
+  }
+}

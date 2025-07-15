@@ -3,9 +3,11 @@ import styles from './Header.module.scss';
 
 export const Header = () => {
   return (
-    <Container className={styles.container}>
-      <Logo />
-      <Navigation />
-    </Container>
+    <header className={styles.header}>
+      <Container className={styles.container}>
+        <Logo />
+        <Navigation />
+      </Container>
+    </header>
   );
 };
