@@ -42,8 +42,8 @@
 
 .imgBlock {
   position: absolute;
-  top: 5%;
-  left: 60%;
+  top: -5%;
+  left: 70%;
 
   img {
     position: relative;
@@ -55,9 +55,9 @@
     content: '';
     position: absolute;
     top: -0.7%;
-    left: 20%;
+    left: -21%;
     border: 5px solid $color-accent;
-    width: 100%;
+    width: 120%;
     height: 105%;
     z-index: 0;
   }
@@ -70,7 +70,6 @@
     border: 5px solid $color-accent;
     width: 115%;
     height: 105%;
-    opacity: 0.4;
     z-index: 0;
   }
 }
@@ -86,7 +85,7 @@
     content: '';
     position: absolute;
     top: -39%;
-    left: -15%;
+    left: -45%;
     background: $color-accent;
     border-radius: 60% 140% 70% 130% / 40% 60% 30% 70%;
     transform: rotate(25deg);
