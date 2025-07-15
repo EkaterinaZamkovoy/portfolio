@@ -2,7 +2,7 @@ import type { ComponentPropsWithRef, ElementType, ReactNode } from 'react';
 import styles from './Container.module.scss';
 import clsx from 'clsx';
 
-type MaxWidth = 'sm' | 'md' | 'lg' | 'full';
+type MaxWidth = 'sm' | 'md' | 'ml' | 'lg' | 'full';
 
 type Props<T extends ElementType = 'div'> = {
   as?: T;
