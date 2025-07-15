@@ -1,0 +1,34 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 24px;
+  font-size: 1.15rem;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+.coloredButton {
+  background: $color-accent;
+  color: $color-bg;
+  border: 2px solid $color-accent;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $color-accent-hover;
+    border: 2px solid $color-accent-hover;
+  }
+}
+
+.emptyButton {
+  background: transparent;
+  border: 2px solid $color-dark;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $color-dark;
+    border: 2px solid $color-dark;
+    color: $color-bg;
+  }
+}
