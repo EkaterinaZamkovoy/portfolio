@@ -1,13 +1,12 @@
 import './App.css';
-import { Title } from './components';
-import { Header, MainBanner } from './widgets';
+import { Header, MainBanner, SkillsWidget } from './widgets';
 
 function App() {
   return (
     <>
       <Header />
       <MainBanner />
-      <Title title='Skills' />
+      <SkillsWidget/>
     </>
   );
 }

@@ -1,0 +1,22 @@
+.comtainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
+}
+
+.skillsComtainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 112px;
+  height: 112px;
+
+  svg {
+    width: 112px;
+  }
+}
