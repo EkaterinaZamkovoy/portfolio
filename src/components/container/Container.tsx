@@ -1,19 +1,26 @@
-import type { ReactNode } from 'react';
+import type { ComponentPropsWithRef, ElementType, ReactNode } from 'react';
 import styles from './Container.module.scss';
 import clsx from 'clsx';
 
 type MaxWidth = 'sm' | 'md' | 'lg' | 'full';
 
-type Props = {
+type Props<T extends ElementType = 'div'> = {
+  as?: T;
   children: ReactNode;
   className?: string;
   maxWidth?: MaxWidth;
-};
+} & ComponentPropsWithRef<T>;
 
-export const Container = ({ children, className, maxWidth = 'lg' }: Props) => {
+export const Container = <T extends ElementType = 'div'>({
+  children,
+  className,
+  maxWidth = 'lg',
+  as,
+}: Props<T>) => {
+  const Component = as || 'div';
   return (
-    <div className={clsx(styles.container, styles[maxWidth], className)}>
+    <Component className={clsx(styles.container, styles[maxWidth], className)}>
       {children}
-    </div>
+    </Component>
   );
 };

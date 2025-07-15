@@ -1,10 +1,11 @@
 import './App.css';
-import { Header } from './widgets';
+import { Header, MainBanner } from './widgets';
 
 function App() {
   return (
     <>
       <Header />
+      <MainBanner />
     </>
   );
 }
