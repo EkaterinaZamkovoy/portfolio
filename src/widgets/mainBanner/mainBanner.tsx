@@ -26,7 +26,14 @@ export const MainBanner = () => {
         </p>
         <div className={styles.buttonsBlock}>
           <Button variant='colored'>Projects</Button>
-          <Button variant='empty'>GitHub</Button>
+          <Button
+            variant='empty'
+            as='a'
+            href='https://github.com/EkaterinaZamkovoy'
+            target='_blanck'
+          >
+            GitHub
+          </Button>
         </div>
       </div>
       <div className={styles.imgBlock}>
