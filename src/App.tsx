@@ -1,12 +1,13 @@
 import './App.css';
-import { Header, MainBanner, SkillsWidget } from './widgets';
+import { Header, MainBanner, ProjectWidget, SkillsWidget } from './widgets';
 
 function App() {
   return (
     <>
       <Header />
       <MainBanner />
-      <SkillsWidget/>
+      <SkillsWidget />
+      <ProjectWidget />
     </>
   );
 }

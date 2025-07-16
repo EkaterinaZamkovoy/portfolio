@@ -5,7 +5,7 @@ import styles from './Card.module.scss';
 type Props = {
   title: string;
   description: string;
-  codeHref: string;
+  codeHref?: string;
   projectHref: string;
   imgSrc: string;
   rowReverse: 'row' | 'row-reverse';
@@ -26,6 +26,7 @@ export const Card = ({
       className={`${styles.container} ${
         rowReverse === 'row-reverse' ? styles.reverse : styles.row
       }`}
+      defaultPadding='withoutPaddings'
     >
       <div className={styles.textContainer}>
         <h3 className={styles.title}>{title}</h3>
@@ -39,12 +40,25 @@ export const Card = ({
           >
             View Project
           </Button>
-          <Button as='a' variant='rounded' href={`${codeHref}`} target='_blank'>
-            Code
-          </Button>
+          {!!codeHref ? (
+            <Button
+              as='a'
+              variant='rounded'
+              href={`${codeHref}`}
+              target='_blank'
+            >
+              Code
+            </Button>
+          ) : null}
         </div>
       </div>
-      <div className={styles.imgContainer}>
+      <div
+        className={`${styles.imgContainer} ${
+          rowReverse === 'row-reverse'
+            ? styles.reverseBorderRadius
+            : styles.rowBorderRadius
+        }`}
+      >
         <img src={`${imgSrc}`} alt='project' />
       </div>
     </Container>

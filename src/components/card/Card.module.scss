@@ -39,5 +39,27 @@
 }
 
 .imgContainer {
-  max-width: 50%;
+  width: 50%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.reverseBorderRadius {
+  border-bottom-left-radius: 24px;
+  border-top-left-radius: 24px;
+}
+
+.rowBorderRadius {
+  border-bottom-right-radius: 24px;
+  border-top-right-radius: 24px;
 }
