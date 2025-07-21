@@ -1,5 +1,11 @@
 import './App.css';
-import { Header, MainBanner, ProjectWidget, SkillsWidget } from './widgets';
+import {
+  FormWidget,
+  Header,
+  MainBanner,
+  ProjectWidget,
+  SkillsWidget,
+} from './widgets';
 
 function App() {
   return (
@@ -8,6 +14,7 @@ function App() {
       <MainBanner />
       <SkillsWidget />
       <ProjectWidget />
+      <FormWidget />
     </>
   );
 }
